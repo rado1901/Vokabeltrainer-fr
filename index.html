@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokabeltrainer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ResponsiveVoice API -->
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="trainer">
+        <h1>Vokabeltrainer - Französisch</h1>
+
+        <!-- Fortschrittsanzeige -->
+        <div id="progress">
+            <div id="progress-bar">
+                <div id="progress-bar-inner"></div>
+            </div>
+            <p id="progress-text">Fortschritt: 0 richtig, 0 falsch</p>
+        </div>
+
+        <!-- Vokabelanzeige -->
+        <div id="question-container">
+            <p id="question">Lade Vokabeln...</p>
+        </div>
+        <div id="solution-container">
+            <p id="solution">Übersetzung wird angezeigt...</p>
+        </div>
+
+        <!-- Buttons -->
+        <div id="buttons">
+            <button onclick="showSolution()">Übersetze</button>
+            <button onclick="markCorrect()">Kann ich</button>
+            <button onclick="markWrong()">Kann ich nicht</button>
+            <button onclick="playAudio()">🔊</button>
+        </div>
+    </div>
+</body>
+</html>
